@@ -200,6 +200,7 @@ private:
 			long long tmp = XtoOne[i].tripPrice + OneToX[i].tripPrice;
 			if (tmp < Min) Min = tmp;
 		}
+		if (Min > 0.5*metale[0].price) Min = 0.5*metale[0].price;
 	}
 	bool theCheapest(size_t id)
 	{
